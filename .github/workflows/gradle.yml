@@ -14,6 +14,7 @@ jobs:
       with:
         java-version: 1.8
     - name: Setup CI Workspace
+      run: chmod +x ./gradlew
       run: ./gradlew setupCIWorkspace -S
     - name: Build with Gradle
       run: ./gradlew build
